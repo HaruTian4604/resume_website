@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ran Tian - CV QR Code</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: url('./RanTianPhoto.JPEG') no-repeat center center/cover;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 350px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .qr-code img {
+            width: 100%;
+            max-width: 250px;
+        }
+        .username {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .course {
+            font-size: 14px;
+            font-weight: normal;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .button-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .button {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .share { background: #ffd744; color: white; }
+        .copy { background: #ffd744; color: white; }
+        .download { background: #ffd744; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="qr-code">
+            <img src="./qr-code.svg" alt="QR Code">
+        </div>
+        <div class="username">@RanTian_CV</div>
+        <div class="course">University of Bristol, MSc Computer Science (Conversion)</div>
+        <div class="button-container">
+            <!-- <button class="button share">Share Page</button> -->
+            <!-- <button class="button copy" onclick="copyLink()">Copy Link</button>
+            <button class="button download">Download</button> -->
+        </div>
+    </div>
+
+    <script>
+        function copyLink() {
+            navigator.clipboard.writeText('https://harutian4604.github.io/resume_website/');
+            alert('Link copied!');
+        }
+    </script>
+</body>
+</html>
